@@ -17,7 +17,7 @@ export default class App extends Component {
   };
 
   // ДЗ 3 збереження в локалсторедж початок
-  componentDidUpdate(prevState) {
+  componentDidUpdate(_, prevState) {
     if (this.state.contacts !== prevState.contacts) {
       localStorage.setItem(
         'contactsLocalStorage',
